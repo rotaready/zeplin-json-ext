@@ -1,2 +1,2 @@
-# zeplin-json-ext
-A Zeplin extension to improve the experience of handover.
+# Zeplin JSON Styleguide
+An extension to improve the experience of handover. Configure the output through the extensions options.

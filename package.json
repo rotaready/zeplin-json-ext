@@ -1,0 +1,71 @@
+{
+  "name": "zeplin-json-ext",
+  "version": "0.1.0",
+  "description": "An extension that allows the formatting of the styleguide into JSON.",
+  "author": {
+    "name": "Callum Floume",
+    "email": "flouc001@gmail.com",
+    "url": "https://github.com/flouc001"
+  },
+  "scripts": {
+    "start": "zem start",
+    "build": "zem build",
+    "clean": "zem clean",
+    "exec": "zem exec"
+  },
+  "zeplin": {
+    "displayName": "Zeplin JSON Styleguide",
+    "projectTypes": [
+      "web"
+    ],
+    "options": [
+      {
+        "name": "Color Export Format",
+        "type": "picker",
+        "id": "color-format",
+        "default": "hex",
+        "options": [
+          {
+            "name": "Hex",
+            "value": "hex"
+          },
+          {
+            "name": "RGBA",
+            "value": "rgba"
+          },
+          {
+            "name": "RGB",
+            "value": "rgb"
+          }
+        ]
+      },
+      {
+        "name": "Font Family Export",
+        "type": "switch",
+        "id": "include-font-family",
+        "default": true
+      },
+      {
+        "name": "Font Size Export",
+        "type": "switch",
+        "id": "include-font-size",
+        "default": true
+      },
+      {
+        "name": "Font Weight Export",
+        "type": "switch",
+        "id": "include-font-weight",
+        "default": false
+      },
+      {
+        "name": "Font Color Export",
+        "type": "switch",
+        "id": "include-font-color",
+        "default": false
+      }
+    ]
+  },
+  "dependencies": {
+    "zem": "^0.2.0"
+  }
+}
